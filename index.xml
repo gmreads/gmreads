@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Meditations</title>
+    <link>https://www.gmreads.com/</link>
+    <description>Recent content on Meditations</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 09 Jan 2022 16:24:34 +0530</lastBuildDate><atom:link href="https://www.gmreads.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On a framework for fitness</title>
+      <link>https://www.gmreads.com/fitness/framework/</link>
+      <pubDate>Sun, 09 Jan 2022 16:24:34 +0530</pubDate>
+      
+      <guid>https://www.gmreads.com/fitness/framework/</guid>
+      <description>Abstract Pick any sport, pick any high performing athlete and ask &amp;ldquo;Is there an underlying framework for their extraordinary performance ?&amp;rdquo;.
+This document is only meant for defining components of fitness, not on the methods to achieve them.
+Definition While one might argue, and do so correctly that athletes aren&amp;rsquo;t the only ones who are fit; But my definition of fitness is limited to athletic fitness and even more specifically fitness required for high performance in Running and Badminton.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://www.gmreads.com/contact/</link>
+      <pubDate>Sun, 09 Jan 2022 15:24:34 +0530</pubDate>
+      
+      <guid>https://www.gmreads.com/contact/</guid>
+      <description>The easiest way to reach me is to send me an email at: contact(at)gmreads(dot)com
+No restriction. No reason needed. Recruiters, potential friends, and spam all welcome alike.</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>
