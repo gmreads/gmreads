@@ -1,0 +1,42 @@
+baseURL: "https://www.gmreads.com"
+title: Meditations 
+paginate: 20 
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+menu:
+     main:
+         - name: Archives 
+           url: archives/
+           weight: 5
+         - name: Tags
+           url: tags/
+           weight: 10
+         - name: Categories
+           url: categories/
+           weight: 15
+         - name: Contact
+           url: contact
+           weight: 15
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowReadingTime: true
+
+    homeInfoParams:
+        Title: "About"
+        Content: >
+
+            - Notes, book summaries, and thoughts on Literature, Fitness, Computer Science, Personal finance.  
+            
+            - Yes, the name is inspired from the book Meditations by Marcus Aurelius ( Highly recommended!)
+                
