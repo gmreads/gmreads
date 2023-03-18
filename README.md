@@ -1,5 +1,9 @@
 ### Hi there 👋
 
+- Senior Software engineer with keen interest in Distributed Systems, Observability, SRE, WebRTC. 
+- Forever curious in deeply learning the underlying pieces like DataBases, Operating Systems, Networking.
+- Happy to chat about anything.
+
 <!--
 **gmreads/gmreads** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
