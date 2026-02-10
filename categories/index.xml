@@ -4,16 +4,23 @@
     <title>Categories on Meditations</title>
     <link>https://www.gmreads.com/categories/</link>
     <description>Recent content in Categories on Meditations</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Jan 2022 16:24:34 +0530</lastBuildDate><atom:link href="https://www.gmreads.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 24 Sep 2023 12:00:00 +0530</lastBuildDate>
+    <atom:link href="https://www.gmreads.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>fitness</title>
+      <title>Literature</title>
+      <link>https://www.gmreads.com/categories/literature/</link>
+      <pubDate>Sun, 24 Sep 2023 12:00:00 +0530</pubDate>
+      <guid>https://www.gmreads.com/categories/literature/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fitness</title>
       <link>https://www.gmreads.com/categories/fitness/</link>
       <pubDate>Sun, 09 Jan 2022 16:24:34 +0530</pubDate>
-      
       <guid>https://www.gmreads.com/categories/fitness/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
