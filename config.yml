@@ -1,6 +1,7 @@
 baseURL: "https://www.gmreads.com"
 title: Meditations 
-paginate: 20 
+pagination:
+  pagerSize: 20
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -9,6 +10,11 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 menu:
      main:
@@ -26,17 +32,19 @@ menu:
            weight: 15
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-
+    env: production
     defaultTheme: auto
-    # disableThemeToggle: true
     ShowReadingTime: true
+    mainSections:
+        - fitness
+        - literature
+        - compsci
+        - personalfinance
 
     homeInfoParams:
-        Title: "About"
-        Content: >
+        Title: "Meditations"
+        Content: |
+            Notes, book summaries, and thoughts on Fitness, Literature, Computer Science, Personal finance.
 
-            - Notes, book summaries, and thoughts on Fitness, Literature, Computer Science, Personal finance.  
-            
-            - Yes, the name is inspired from the book Meditations by Marcus Aurelius ( Highly recommended!)
+            Yes, the name is inspired from the book Meditations by Marcus Aurelius (Highly recommended!)
                 

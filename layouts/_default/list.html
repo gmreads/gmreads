@@ -1,0 +1,63 @@
+{{- define "main" }}
+
+{{- if .IsHome }}
+{{- /* Home page with info section */ -}}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{- .Site.Params.homeInfoParams.Title | default .Site.Title }}</h1>
+    </header>
+    <section class="entry-content">
+        <p>{{- .Site.Params.homeInfoParams.Content | markdownify }}</p>
+    </section>
+</article>
+{{- end }}
+
+{{- $pages := .Pages }}
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
+
+{{- if gt (len $pages) 0 }}
+<div class="posts-grid">
+    {{- range $pages }}
+    <article class="post-card">
+        <a href="{{ .Permalink }}">
+            <div class="post-card-cover">
+                {{- if .Params.cover.image }}
+                <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt | default .Title }}">
+                {{- else }}
+                {{- /* Show emoji based on tags */ -}}
+                {{- $icon := "📝" }}
+                {{- range .Params.tags }}
+                    {{- if eq . "fire" }}{{ $icon = "🔥" }}{{ end }}
+                    {{- if eq . "night-sky" }}{{ $icon = "🌙" }}{{ end }}
+                    {{- if eq . "nature" }}{{ $icon = "🌿" }}{{ end }}
+                    {{- if eq . "travel" }}{{ $icon = "✈️" }}{{ end }}
+                    {{- if eq . "fitness" }}{{ $icon = "💪" }}{{ end }}
+                {{- end }}
+                {{ $icon }}
+                {{- end }}
+            </div>
+            <div class="post-card-content">
+                <h2 class="post-card-title">{{ .Title }}</h2>
+                <div class="post-card-meta">
+                    <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+                    {{- if .Params.readingTime }}
+                    <span>· {{ .ReadingTime }} min read</span>
+                    {{- end }}
+                </div>
+                {{- if .Params.tags }}
+                <div class="post-card-tags">
+                    {{- range .Params.tags }}
+                    <span class="post-card-tag">{{ . }}</span>
+                    {{- end }}
+                </div>
+                {{- end }}
+            </div>
+        </a>
+    </article>
+    {{- end }}
+</div>
+{{- end }}
+
+{{- end }}{{/* end main */}}
